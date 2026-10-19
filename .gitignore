@@ -1,0 +1,47 @@
+# Rust / Tauri
+/target
+/src-tauri/target
+/src-tauri/gen
+
+# Bundled engine binaries — fetched and verified, never committed
+/src-tauri/binaries/
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Build output
+/build
+*.exe
+*.msi
+*.nsis.zip
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local scratch — use for manual test files, never commit
+/scratch/
+
+# Secrets. None of these should ever exist here, but the repo is public
+# and the cost of a leak is permanent, so the patterns are listed anyway.
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+*.cer
+*.jks
+*.keystore
+secrets/
+signing/

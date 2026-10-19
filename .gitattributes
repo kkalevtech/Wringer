@@ -1,0 +1,25 @@
+# Normalise line endings so Windows CRLF never shows up as a diff.
+* text=auto eol=lf
+
+# Batch/PowerShell files must keep CRLF for Windows tooling.
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Golden fixture data is binary — never touch it.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.tif binary
+*.tiff binary
+*.bmp binary
+*.gif binary
+*.ico binary
+*.heic binary
+*.heif binary
+
+# Lock files are generated; keep them out of diffs.
+package-lock.json -diff
+Cargo.lock -diff
